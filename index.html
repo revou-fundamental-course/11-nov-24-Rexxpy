@@ -13,6 +13,16 @@
         <i class="bi bi-chevron-up"></i> 
     </button>
 
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Data Submitted !</h2>
+        <div class="modal-content">
+          <p><strong>Nama:&nbsp;&nbsp;</strong><span id="modalNama"></span></p>
+          <p><strong>Email:&nbsp;&nbsp;</strong><span id="modalEmail"></span></p>
+          <p><strong>Pilihan:&nbsp;&nbsp;</strong><span id="modalOption"></span></p>
+        </div>
+    </div>
+
     <header class="main-header">
         <div class="main-logo">
             <img src="img\kaze.png" alt="Logo" srcset="">
@@ -110,7 +120,7 @@
                                 <option value="hamster">Hamster</option>
                               </select>
                         </div>
-                        <button type="button">SEND</button>
+                        <button type="button" id="submitButton">SEND</button>
                     </div>
                 </section>
             </div>

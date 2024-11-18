@@ -157,7 +157,7 @@ body{
 
 .testimoni-text{
     font-style: italic;
-    color: #660f0f6b;
+    color: #3b4754c0;
 }
 
 .text-banner > .profile-card {
@@ -441,4 +441,73 @@ footer{
 .footer-description > p{
     margin: 0;
     font-size: 17px;
+}
+
+.input-error::placeholder{
+    color: red; 
+    font-weight: 700;
+    font-style: italic;
+}
+
+.modal {
+    visibility: hidden; 
+    opacity: 0; 
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.8); 
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-bottom: 10px solid #1f7913;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2c353d;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; /
+}
+
+.modal.open {
+    visibility: visible; 
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+.modal > .close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+}
+
+.modal-content > p {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.modal-content > strong {
+    width: 120px;
+    font-weight: bold;
+}
+
+.modal-content > span {
+    margin-left: 10px;
+    color: #333;
 }
