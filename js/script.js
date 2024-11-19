@@ -1,3 +1,25 @@
+// Script Navbar Toggler
+window.addEventListener("DOMContentLoaded", () => {
+    const toggler = document.getElementById("navbar-toggler");
+    const offCanvas = document.getElementById("off-canvas");
+    const closeBtn = document.getElementById("close-btn");
+
+    toggler.addEventListener("click", (e) => {
+        e.stopPropagation(); 
+        offCanvas.classList.toggle("open");
+    });
+
+    closeBtn.addEventListener("click", () => {
+        offCanvas.classList.remove("open");
+    });
+
+    document.addEventListener("click", (e) => {
+        if (!offCanvas.contains(e.target) && e.target !== toggler) {
+            offCanvas.classList.remove("open");
+        }
+    });
+});
+
 // Script Validasi Input
 const submitButton = document.getElementById('submitButton');
 const namaInput = document.getElementById('nama');
@@ -68,7 +90,7 @@ submitButton.addEventListener('click', function () {
 
         showModal(); 
 
-        setTimeout(closeModal, 3000);
+        setTimeout(closeModal, 2000);
     }
 });
 
@@ -113,6 +135,7 @@ function prevSlide() {
 
 setInterval(nextSlide, 3000);
 
-document.querySelector('#next-button').addEventListener('click', nextSlide);
-document.querySelector('#prev-button').addEventListener('click', prevSlide);
 
+
+  
+  
