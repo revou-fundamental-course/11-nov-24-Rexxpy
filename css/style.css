@@ -573,6 +573,10 @@ footer{
     .grid-package{
         grid-gap: 50px;
     }
+
+    .closing-headline > p {
+        width: 70%;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -588,6 +592,10 @@ footer{
     .banner-autoslide > img{
         width: 658px;
         height: 329px;
+    }
+
+    .closing-headline > p {
+        width: 70%;
     }
 }
 
