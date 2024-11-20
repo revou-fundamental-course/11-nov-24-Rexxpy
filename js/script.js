@@ -128,11 +128,6 @@ function nextSlide() {
     changeSlide();
 }
 
-function prevSlide() {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; 
-    changeSlide();
-}
-
 setInterval(nextSlide, 3000);
 
 
