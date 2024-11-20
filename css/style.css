@@ -368,13 +368,6 @@ body{
     grid-gap: 80px;
     margin-left: 80px;
     margin-top: 20px;
-
-    /* max-width: 920px;
-	margin-inline: auto;
-	display: flex;
-	align-items: center;
-	overflow:auto;
-	scroll-behavior:auto; */
 }
 
 .content-package {
@@ -555,18 +548,18 @@ footer{
 }
 
 .modal-content > p {
-    margin: 10px 0;
-    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin: 5px 0;
 }
 
-.modal-content > strong {
-    width: 120px;
-    font-weight: bold;
+.modal-content > p > b {
+    width: 70px;
 }
 
 .modal-content > span {
-    margin-left: 10px;
     color: #333;
+    flex-grow: 1;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -961,5 +954,28 @@ footer{
 
     .head-package > h2{
         font-size:x-large;
+    }
+}
+
+
+@media screen and (max-width: 340px) {
+    .main-article1 {
+        padding: 0px 53px;
+    }
+
+    .testimoni-text {
+        font-size: x-small;
+    }
+
+    .modal {     
+        transform: translate(-50%, -50%) scale(0.7); 
+    }
+    
+    .modal.open {
+        transform: translate(-50%, -50%) scale(0.8); 
+    }
+
+    .modal-content > p > b {
+        width: 60px;
     }
 }
